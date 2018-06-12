@@ -38,10 +38,9 @@ LNode * unionlink(linknode a, linknode b)
          while(p)
              {
                r = p;
-               if(q->data != p->data)
-                  {
-                     p = p->next;
-                   }
+               if(q->data == p->data)
+                  break;     
+                p = p->next;
              }
          if(!p)
             {
